@@ -1,0 +1,45 @@
+// TEST CASES
+
+Verify Title of the page.
+Verify Title Description.
+Check for <Add timezone> button and verify enablement of the button
+Verify column names of the table such as <Label>, <Timezone>, <Local Time> and <Delete>.
+Verify existence of <Local(you)>label entry.
+Verify <Delete> button for Local(you) 
+Validation of Label field for alphanumeric, identifiers, character limitations, Special characters.
+Check for location field drop-down are selectable or not.
+Verify the <Save> button.
+Add timezone entry
+Verify presence of above entry in the table
+Validate the deletion of entry
+Verify sorting of entry
+Verify error message, when user tries to save entry with an empty/non-selected fields
+Verify how many entries can be able to add
+Verify for duplicate entries
+Cross platform validation (Desktop, Mobile)
+Verify for different browsers (Firefox, Chrome, Safari)
+
+// ISSUES
+1. Sorting is not done by local time
+   Actual Result : Sorting by alphabets in label column.
+   Expected Result : Sorting should be done by local time.
+   Good to have : Clickablity of the columns to sort the entries.
+
+2. Delete button should be disabled for Local(you)
+   Actual Result : User is able to delete local(you) entry but reload enables it back.
+   Expected Result : Delete button should be disabled/Removed for Local(you).
+
+3. Display error message, when user tries to save entry with an empty/non-selected fields
+    Actual Result : Does not allow user to save without any error message.
+    Expected Result : Display the error messages or mark the fields as mandatory.
+
+4.  Remove/disable <Add timezone> button when user attempts to add entry 
+    Actual Result : <Add timezone> button is enabled and clickable which hides the entry fields.
+    Expected Result : <Add timezone> button should be disabled/removed until user completes the entry or refresh page.
+    Good to have : Popup window for the user to provide input which avoids the visibility of existing entries.
+
+5. User unable to add Multiple entries for same timezone.
+   Actual Result : Overrides the existing timezone entry with new label 
+   Expected Result : Should create new entry with the expected timezone.
+
+NOTE : The above written Test cases or Issue for time being written in this format but in day to day work we use tools like Jira/Testrail/Zephyr/X-ray.
